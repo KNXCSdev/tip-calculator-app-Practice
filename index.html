@@ -7,6 +7,12 @@
 
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="main.js"></script>
     <title>Frontend Mentor | Tip calculator app</title>
   </head>
@@ -17,27 +23,28 @@
     </h1>
     <div class="calculator">
       <div class="calculator__inputs">
-        <div>
+        <div class="flex">
           <label for="calculator__bill">Bill</label>
-          <label for="calculator__bill">Can`t be zero</label>
+          <label for="calculator__bill" class="calculator__invalid">Can`t be zero</label>
         </div>
-        <input type="text" class="calculator__bill" />
+
+        <input type="text" class="calculator__bill" placeholder="0" />
 
         <p class="calculator__select">Select Tip %</p>
         <div class="calculator__grid">
-          <div class="calculator__percent">5%</div>
-          <div class="calculator__percent">10%</div>
-          <div class="calculator__percent">15%</div>
-          <div class="calculator__percent">25%</div>
-          <div class="calculator__percent">50%</div>
-          <div class="calculator__percent"><input type="text" /></div>
+          <button class="calculator__percent clicked">5%</button>
+          <button class="calculator__percent">10%</button>
+          <button class="calculator__percent">15%</button>
+          <button class="calculator__percent">25%</button>
+          <button class="calculator__percent">50%</button>
+          <input type="text" class="calculator__custom" placeholder="0" />
         </div>
 
-        <div>
+        <div class="flex">
           <label for="calculator__people">Number of People</label>
-          <label for="calculator__people">Can`t be zero</label>
+          <label for="calculator__people" class="calculator__invalid">Can`t be zero</label>
         </div>
-        <input type="text" />
+        <input type="text" placeholder="0" />
       </div>
       <div class="calculator__results">
         <div class="calculator__result">
