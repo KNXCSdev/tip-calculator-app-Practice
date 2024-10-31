@@ -27,7 +27,7 @@ body {
   font-family: "Space Mono", sans-serif;
   height: 100vh;
   background-color: var(--lightgrayishcyan);
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 label {
@@ -72,11 +72,16 @@ input {
   padding: 4rem;
   display: flex;
   gap: 4rem;
-
+  height: 50rem;
   &__inputs {
     display: flex;
     flex-basis: 50%;
     flex-direction: column;
+    height: 100%;
+  }
+
+  &__bill {
+    margin-bottom: 4rem;
   }
 
   &__invalid {
@@ -109,17 +114,64 @@ input {
     border: none;
     cursor: pointer;
     font-family: inherit;
+    transition: all 0.3s;
+    &:hover {
+      background-color: var(--lightgrayishcyan);
+      color: var(--verydarkcyan);
+    }
   }
 
   &__custom {
     width: 100%;
     height: 100%;
   }
+
+  &__results {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding: 4rem;
+    background-color: var(--verydarkcyan);
+    border-radius: 15px;
+    height: 100%;
+  }
+
+  &__amount,
+  &__total {
+    color: var(--white);
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+
+  &__person {
+    color: var(--grayishcyan);
+  }
+}
+
+.reset {
+  display: inline-block;
+  margin-top: auto;
+  width: 100%;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: var(--verydarkcyan);
+  background-color: var(--strongcyan);
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+  &:hover {
+    background-color: var(--lightgrayishcyan);
+  }
 }
 
 .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .clicked {
@@ -127,14 +179,12 @@ input {
   color: var(--verydarkcyan);
 }
 
-// <div class="calculator__results">
-//   <div class="calculator__result">
-//     <p class="calculator__amount">Tip Amount</p>
-//     <p class="calculator__person">/person</p>
-//   </div>
-//   <div class="calculator__result">
-//     <p class="calculator__total">Total</p>
-//     <p class="calculator__person">/person</p>
-//   </div>
-// </div>
-// </div>
+.tip {
+  color: var(--strongcyan);
+  font-size: 4.8rem;
+  font-weight: 700;
+}
+
+.mb {
+  margin-bottom: 5rem;
+}

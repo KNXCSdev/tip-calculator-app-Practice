@@ -47,14 +47,21 @@
         <input type="text" placeholder="0" />
       </div>
       <div class="calculator__results">
-        <div class="calculator__result">
-          <p class="calculator__amount">Tip Amount</p>
-          <p class="calculator__person">/person</p>
+        <div class="flex mb">
+          <div class="calculator__result">
+            <p class="calculator__amount">Tip Amount</p>
+            <p class="calculator__person">/person</p>
+          </div>
+          <p class="tip calculator__tip--amount">$0.00</p>
         </div>
-        <div class="calculator__result">
-          <p class="calculator__total">Total</p>
-          <p class="calculator__person">/person</p>
+        <div class="flex">
+          <div class="calculator__result">
+            <p class="calculator__total">Total</p>
+            <p class="calculator__person">/person</p>
+          </div>
+          <p class="tip calculator__tip--total">$0.00</p>
         </div>
+        <button class="reset">Reset</button>
       </div>
     </div>
   </body>
