@@ -24,7 +24,7 @@ body {
   font-family: "Space Mono", sans-serif;
   height: 100vh;
   background-color: var(--lightgrayishcyan);
-  padding-top: 5rem;
+  padding-top: 10rem;
 }
 
 label {
