@@ -20,31 +20,36 @@
     <h1 class="primary-heading">
       SPLI <br />
       TTER
+      <br />CLICK ENTER TO SUMBIT
     </h1>
     <div class="calculator">
       <div class="calculator__inputs">
         <div class="flex">
           <label for="calculator__bill">Bill</label>
-          <label for="calculator__bill" class="calculator__invalid">Can`t be zero</label>
+          <label for="calculator__bill" class="calculator__invalid hidden bill__invalid"
+            >Can`t be zero</label
+          >
         </div>
 
         <input type="text" class="calculator__bill" placeholder="0" />
 
         <p class="calculator__select">Select Tip %</p>
         <div class="calculator__grid">
-          <button class="calculator__percent clicked">5%</button>
-          <button class="calculator__percent">10%</button>
-          <button class="calculator__percent">15%</button>
-          <button class="calculator__percent">25%</button>
-          <button class="calculator__percent">50%</button>
+          <button class="calculator__percent" value="0.05">5%</button>
+          <button class="calculator__percent" value="0.10">10%</button>
+          <button class="calculator__percent" value="0.15">15%</button>
+          <button class="calculator__percent" value="0.25">25%</button>
+          <button class="calculator__percent" value="0.50">50%</button>
           <input type="text" class="calculator__custom" placeholder="0" />
         </div>
 
         <div class="flex">
           <label for="calculator__people">Number of People</label>
-          <label for="calculator__people" class="calculator__invalid">Can`t be zero</label>
+          <label for="calculator__people" class="calculator__invalid hidden people__invalid"
+            >Can`t be zero</label
+          >
         </div>
-        <input type="text" placeholder="0" />
+        <input type="text" placeholder="0" class="calculator__people" />
       </div>
       <div class="calculator__results">
         <div class="flex mb">
@@ -52,14 +57,14 @@
             <p class="calculator__amount">Tip Amount</p>
             <p class="calculator__person">/person</p>
           </div>
-          <p class="tip calculator__tip--amount">$0.00</p>
+          <p class="tip">$<span class="calculator__tip--amount">0.00</span></p>
         </div>
         <div class="flex">
           <div class="calculator__result">
             <p class="calculator__total">Total</p>
             <p class="calculator__person">/person</p>
           </div>
-          <p class="tip calculator__tip--total">$0.00</p>
+          <p class="tip">$<span class="calculator__tip--total">0.00</span></p>
         </div>
         <button class="reset">Reset</button>
       </div>
