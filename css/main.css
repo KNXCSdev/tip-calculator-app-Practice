@@ -175,3 +175,7 @@ input:focus {
 .mb {
   margin-bottom: 5rem;
 }
+
+.hidden {
+  display: none;
+}
