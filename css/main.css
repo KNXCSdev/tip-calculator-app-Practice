@@ -179,3 +179,45 @@ input:focus {
 .hidden {
   display: none;
 }
+
+@media only screen and (max-width: 50em) {
+  html {
+    font-size: 55%;
+  }
+  .calculator {
+    max-width: 80rem;
+    padding: 2rem;
+  }
+  .calculator__results {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 40em) {
+  body {
+    padding-top: 5rem;
+  }
+  html {
+    font-size: 50%;
+  }
+  .mb {
+    margin-bottom: 2rem;
+  }
+  .calculator {
+    flex-direction: column;
+    height: auto;
+  }
+  .reset {
+    margin-top: 3rem;
+  }
+}
+@media only screen and (max-width: 25em) {
+  .calculator {
+    gap: 2rem;
+  }
+  .calculator__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .calculator__people {
+    margin-bottom: 1rem;
+  }
+}
